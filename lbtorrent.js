@@ -1,7 +1,7 @@
 var title = document.querySelector('.headline-1.js-widont.prettify').textContent;
 var year = document.querySelector('.number').textContent;
 
-chrome.storage.sync.get(null, function(result) {console.log("hi")
+chrome.storage.sync.get(null, function(result) {
 //ncore
 if (result.ncore) {
     var node_nc = document.createElement('li');
