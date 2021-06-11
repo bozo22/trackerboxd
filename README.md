@@ -6,7 +6,7 @@ A browser extension that adds torrent search shortcuts to Letterboxd.
 
 Firefox: https://addons.mozilla.org/en-GB/firefox/addon/torrentboxd/
 
-**Before using, go to the extension settings and select the torrent sites you want to see on Letterboxd. By default, no options are selected.**
+**❗️ Before using, go to the extension settings and select the torrent sites you want to see on Letterboxd. By default, no options are selected.**
 
 ## Screenshot
 
