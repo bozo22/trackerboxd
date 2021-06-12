@@ -1,7 +1,7 @@
 {
 
 "manifest_version": 2,
-"name": "Torrentboxd",
+"name": "Trackerboxd",
 "version": "1.1",
 
 "description": "Adds torrent search shortcuts to Letterboxd",
@@ -13,7 +13,7 @@
 "content_scripts": [
   {
     "matches": ["*://*.letterboxd.com/*"],
-    "js": ["lbtorrent.js"]
+    "js": ["trackerboxd.js"]
   }
 ],
 
@@ -25,7 +25,7 @@
 
 "browser_action": {
   "default_icon": "icon.png",
-  "default_title": "Torrentboxd",
+  "default_title": "Trackerboxd",
   "default_popup": "options.html"
 },
 

@@ -1,5 +1,5 @@
 ![icon](icon.png)
-# torrentboxd
+# trackerboxd
 A browser extension that adds torrent search shortcuts to Letterboxd.
 
 ## Installation
