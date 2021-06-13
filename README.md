@@ -4,7 +4,7 @@ A browser extension that adds torrent search shortcuts to Letterboxd.
 
 ## Installation
 
-- [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/torrentboxd/)
+- [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/trackerboxd/)
 - [Chrome](https://chrome.google.com/webstore/detail/torrentboxd/jclinmfmhfdebkgfjojegbcnnhdfpfed)
 
 **❗️ Before using, go to the extension settings and select the trackers you want use. By default, no options are selected.**
