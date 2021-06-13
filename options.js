@@ -6,17 +6,20 @@ function saveOptions(e) {
       nyaa: document.querySelector("#nyaa").checked,
       rarbg: document.querySelector("#rarbg").checked,
       piratebay: document.querySelector("#piratebay").checked,
+      yts: document.querySelector("#yts").checked,
+      ttsx: document.querySelector("#ttsx").checked,
     });
   }
   
 function restoreOptions() {
-  
-    chrome.storage.sync.get(null, function(result) {
+  chrome.storage.sync.get(null, function(result) {
       document.querySelector("#ncore").checked = result.ncore;
       document.querySelector("#knaben").checked = result.knaben;
       document.querySelector("#nyaa").checked = result.nyaa;
       document.querySelector("#rarbg").checked = result.rarbg;
       document.querySelector("#piratebay").checked = result.piratebay;
+      document.querySelector("#yts").checked = result.yts;
+      document.querySelector("#ttsx").checked = result.ttsx;
     });
   }
   

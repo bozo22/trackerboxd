@@ -4,9 +4,9 @@ A browser extension that adds torrent search shortcuts to Letterboxd.
 
 ## Installation
 
-[Firefox](https://addons.mozilla.org/en-GB/firefox/addon/torrentboxd/)
+- [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/torrentboxd/)
 
-[Chrome](https://chrome.google.com/webstore/detail/torrentboxd/jclinmfmhfdebkgfjojegbcnnhdfpfed)
+- [Chrome](https://chrome.google.com/webstore/detail/torrentboxd/jclinmfmhfdebkgfjojegbcnnhdfpfed)
 
 **❗️ Before using, go to the extension settings and select the trackers you want use. By default, no options are selected.**
 
@@ -14,9 +14,11 @@ A browser extension that adds torrent search shortcuts to Letterboxd.
 
 - Knaben
 - The Pirate Bay
-- Ncore
-- RARBG
+- YTS
+- 1337x
 - Nyaa
+- RARBG
+- ncore
 
 If you want a tracker added, feel free to open an issue/PR!
 
