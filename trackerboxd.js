@@ -1,4 +1,4 @@
-let title = document.querySelector('.headline-1.js-widont.prettify').textContent;
+let title = document.querySelector('.headline-1.js-widont.prettify').textContent.replace(/&/g, '').replace(/’/g, "'").replace(/\s+/g, ' ').trim();
 let year = document.querySelector('.number').textContent;
 
 let trackers = {
