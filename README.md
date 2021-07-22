@@ -18,6 +18,7 @@ A browser extension that adds torrent search shortcuts to Letterboxd.
 - Nyaa
 - RARBG
 - ncore
+- RuTracker 
 
 If you want a tracker added, feel free to open an issue/PR!
 
