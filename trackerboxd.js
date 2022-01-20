@@ -2,6 +2,7 @@ let title = document.querySelector('.headline-1.js-widont.prettify').textContent
 let year = document.querySelector('.number').textContent;
 
 let trackers = {
+    extto: {text: "Search extto", link: "https://site.extto.com/search/?q=" + title + " " + year},
     knaben: {text: "Search Knaben", link: "https://knaben.net/search/?q=" + title + " " + year + "#Seeders"},
     ncore: {text: "Search ncore", link: "https://ncore.pro/torrents.php?mire=" + title + " " + year},
     nyaa: {text: "Search Nyaa", link: "https://nyaa.si/?f=0&c=0_0&q=" + title + " " + year + "&s=seeders&o=desc"},
