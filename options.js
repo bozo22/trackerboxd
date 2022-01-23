@@ -1,6 +1,7 @@
 function saveOptions(e) {
     e.preventDefault();
     chrome.storage.sync.set({
+      nzbfinder: document.querySelector("#nzbfinder").checked,
       extto: document.querySelector("#extto").checked,
       ncore: document.querySelector("#ncore").checked,
       knaben: document.querySelector("#knaben").checked,
@@ -15,6 +16,7 @@ function saveOptions(e) {
   
 function restoreOptions() {
   chrome.storage.sync.get(null, function(result) {
+      document.querySelector("#nzbfinder").checked = result.nzbfinder;
       document.querySelector("#extto").checked = result.extto;
       document.querySelector("#ncore").checked = result.ncore;
       document.querySelector("#knaben").checked = result.knaben;
