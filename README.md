@@ -20,6 +20,7 @@ A browser extension that adds torrent search shortcuts to Letterboxd.
 - ncore
 - RuTracker 
 - Extto
+- NZBFinder
 
 If you want a tracker added, feel free to open an issue/PR!
 
