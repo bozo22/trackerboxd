@@ -16,7 +16,6 @@ A browser extension that adds torrent search shortcuts to Letterboxd.
 - YTS
 - 1337x
 - Nyaa
-- RARBG
 - ncore
 - RuTracker 
 - Extto
