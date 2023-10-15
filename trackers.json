@@ -1,0 +1,92 @@
+{
+  "extto": {
+    "name": "extto",
+    "link": [
+      "https://site.extto.com/search/?q=",
+      " ",
+      ""
+    ],
+    "type": "public"
+  },
+  "nyaa": {
+    "name": "Nyaa",
+    "link": [
+      "https://nyaa.si/?f=0&c=0_0&q=",
+      " ",
+      "&s=seeders&o=desc"
+    ],
+    "type": "public"
+  },
+  "piratebay": {
+    "name": "The Pirate Bay",
+    "link": [
+      "https://knaben.ru/thepiratebay/s/?q=",
+      " ",
+      "&page=0&orderby=99"
+    ],
+    "type": "public"
+  },
+  "rutracker": {
+    "name": "RuTracker",
+    "link": [
+      "https://rutracker.org/forum/tracker.php?nm=",
+      " ",
+      ""
+    ],
+    "type": "public"
+  },
+  "torrentgalaxy": {
+    "name": "TorrentGalaxy",
+    "link": [
+      "https://torrentgalaxy.to/torrents.php?search=",
+      " ",
+      "&sort=seeders&order=desc"
+    ],
+    "type": "public"
+  },
+  "ncore": {
+    "name": "nCore",
+    "link": [
+      "https://ncore.pro/torrents.php?mire=",
+      " ",
+      ""
+    ],
+    "type": "private"
+  },
+  "knaben": {
+    "name": "Knaben",
+    "link": [
+      "https://knaben.net/search/?q=",
+      " ",
+      "#Seeders"
+    ],
+    "type": "aggregator"
+  },
+  "nzbfinder": {
+    "name": "nzbfinder",
+    "link": [
+      "https://nzbfinder.ws/Movies?title=",
+      "&year=",
+      ""
+    ],
+    "type": "other"
+  },
+  "torrentztwo": {
+    "name": "Torrentz2",
+    "link": [
+      "https://torrentz2.nz/search?q=",
+      " ",
+      ""
+    ],
+    "type": "aggregator"
+  },
+  "bitsearch": {
+    "name": "BitSearch",
+    "link": [
+      "https://bitsearch.to/search?q=",
+      " ",
+      "&sort=seeders"
+    ],
+    "type": "aggregator"
+  }
+}

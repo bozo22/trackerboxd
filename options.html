@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-  </head>
 
-  <body style="background-color:lavender; font-family: 'Courier New', Courier, monospace;padding: 5px;width:230px;">
-    <h3 style="margin-top:0px; margin-bottom:7px;">Select trackers</h3>
-    <form>
-      <input type="checkbox" id="nzbfinder" name="nzbfinder">
-      <label for="nzbfinder">nzbfinder</label><br>
-      <input type="checkbox" id="extto" name="extto">
-      <label for="extto">extto</label><br>
-      <input type="checkbox" id="knaben" name="knaben">
-      <label for="knaben">Knaben</label><br>
-      <input type="checkbox" id="piratebay" name="piratebay">
-      <label for="piratebay">The Pirate Bay</label><br>
-      <input type="checkbox" id="yts" name="yts">
-      <label for="yts">YTS</label><br>
-      <input type="checkbox" id="ttsx" name="ttsx">
-      <label for="ttsx">1337x</label><br>
-      <input type="checkbox" id="nyaa" name="nyaa">
-      <label for="nyaa">Nyaa</label><br>
-      <input type="checkbox" id="ncore" name="ncore">
-      <label for="ncore">ncore</label><br>
-      <input type="checkbox" id="rutracker" name="rutracker">
-      <label for="rutracker">RuTracker</label><br>
-      <button style="margin-top: 8px;"type="submit">Save</button>
-    </form>
+<head>
+  <meta charset="utf-8" />
+</head>
 
-    <script src="options.js"></script>
+<body style="
+      background-color: lavender;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 5px;
+      width: 230px;
+    ">
+  <h3 style="margin-top: 0px; margin-bottom: 7px">Select trackers</h3>
+  <hr />
+  <form>
+    <h4 style="margin-top: 7px; margin-bottom: 7px">Public</h4>
+    <div id="public"></div>
+    <h4 style="margin-top: 7px; margin-bottom: 7px">Private</h4>
+    <div id="private"></div>
+    <h4 style="margin-top: 7px; margin-bottom: 7px">Site aggregators</h4>
+    <div id="aggregator"></div>
+    <h4 style="margin-top: 7px; margin-bottom: 7px">Other</h4>
+    <div id="other"></div>
+    <button style="margin-top: 8px" type="submit">Save</button>
+  </form>
 
-  </body>
+  <script src="options.js"></script>
+</body>
 
 </html>

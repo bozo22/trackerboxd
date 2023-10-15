@@ -1,38 +1,31 @@
 {
-
-"manifest_version": 3,
-"name": "trackerboxd",
-"version": "1.5.2",
-
-"description": "Adds torrent search shortcuts to Letterboxd",
-
-"icons": {
-  "128": "icon.png",
-  "512": "icon512.png"
-},
-
-"content_scripts": [
-  {
-    "matches": ["*://*.letterboxd.com/film/*"],
-    "js": ["trackerboxd.js"]
-  }
-],
-
-"options_ui": {
-  "page": "options.html"
-},
-
-"permissions": ["storage"],
-
-"action": {
-  "default_icon": "icon.png",
-  "default_title": "trackerboxd",
-  "default_popup": "options.html"
-},
-
-"browser_specific_settings": {
-  "gecko": {
-    "id": "{df85b502-bef7-45a0-a9b3-dbcc57927a3d}"
-  }
+  "manifest_version": 2,
+  "name": "trackerboxd",
+  "version": "1.5.4",
+  "description": "Adds torrent search shortcuts to Letterboxd",
+  "icons": {
+    "128": "icon.png",
+    "512": "icon512.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.letterboxd.com/film/*"],
+      "js": ["trackerboxd.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "permissions": ["storage", "*://*.letterboxd.com/*"],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "trackerboxd",
+    "default_popup": "options.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{df85b502-bef7-45a0-a9b3-dbcc57927a3d}"
+    }
+  },
+  "web_accessible_resources": ["trackers.json"]
 }
-  }

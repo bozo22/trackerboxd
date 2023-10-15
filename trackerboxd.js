@@ -1,27 +1,38 @@
-let title = document.querySelector('.headline-1.js-widont.prettify').textContent.replace(/&/g, '').replace(/’/g, "'").replace(/\s+/g, ' ').trim();
-let year = document.querySelector('.number').textContent;
+// Get film data
+let title = document
+  .querySelector(".headline-1.js-widont.prettify")
+  .textContent.replace(/&/g, "")
+  .replace(/’/g, "")
+  .replace(/'/g, "")
+  .replace(/\s+/g, " ")
+  .trim();
+let year = document.querySelector(".number").textContent;
 
-let trackers = {
-    nzbfinder: {text: "Search nzbfinder", link: "https://nzbfinder.ws/Movies?title=" + title + "&year=" + year},
-    extto: {text: "Search extto", link: "https://site.extto.com/search/?q=" + title + " " + year},
-    knaben: {text: "Search Knaben", link: "https://knaben.net/search/?q=" + title + " " + year + "#Seeders"},
-    ncore: {text: "Search ncore", link: "https://ncore.pro/torrents.php?mire=" + title + " " + year},
-    nyaa: {text: "Search Nyaa", link: "https://nyaa.si/?f=0&c=0_0&q=" + title + " " + year + "&s=seeders&o=desc"},
-    piratebay: {text: "Search The Pirate Bay", link: "https://pirate-bays.net/search?q=" + title + " " + year},
-    yts: {text: "Search YTS", link: "https://yts.mx/browse-movies/" + title + " " + year + "/all/all/0/seeds/0/all"},
-    ttsx: {text: "Search 1337x", link: "https://www.1337x.to/sort-search/" + title + " " + year + "/seeders/desc/1/"},
-    rutracker: {text: "Search RuTracker", link: "https://rutracker.org/forum/tracker.php?nm=" + title + " " + year}
-}
-
-chrome.storage.sync.get(null, function(result) {
-for (let i in result) {
-    if (result[i] && trackers[i]) {
-        var node = document.createElement('li');
-        var link = document.createElement('a');
-        link.appendChild(document.createTextNode(trackers[i].text));
-        link.href = trackers[i].link;
+// Create search buttons
+function append_trackers(trackers) {
+  chrome.storage.sync.get(null, function (result) {
+    for (let i in result) {
+      if (result[i] && trackers[i]) {
+        var node = document.createElement("li");
+        var link = document.createElement("a");
+        link.appendChild(document.createTextNode("Search " + trackers[i].name));
+        let url =
+          trackers[i].link[0] +
+          title +
+          trackers[i].link[1] +
+          year +
+          trackers[i].link[2];
+        link.href = url;
         link.target = "_blank";
         node.appendChild(link);
-        document.querySelector('.js-actions-panel').appendChild(node);
+        document.querySelector(".js-actions-panel").appendChild(node);
+      }
     }
-}})
+  });
+}
+
+fetch(chrome.runtime.getURL("/trackers.json"))
+  .then((resp) => resp.json())
+  .then((trackers) => {
+    append_trackers(trackers);
+  });
