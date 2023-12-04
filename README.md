@@ -21,6 +21,7 @@ A browser extension that adds torrent search shortcuts to Letterboxd.
 - TorrentGalaxy
 - Torrentz2
 - BitSearch
+- 1337x
 
 If you want a tracker added, feel free to open an issue/PR!
 

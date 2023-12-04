@@ -44,6 +44,15 @@
     ],
     "type": "public"
   },
+  "ttsx": {
+    "name": "1337x",
+    "link": [
+      "https://1337x.to/sort-search/",
+      " ",
+      "/seeders/desc/1/"
+    ],
+    "type": "public"
+  },
   "ncore": {
     "name": "nCore",
     "link": [
