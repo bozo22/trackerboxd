@@ -1,12 +1,12 @@
 // Get film data
 let title = document
-  .querySelector(".headline-1.js-widont.prettify")
+  .querySelector(".name.js-widont.prettify")
   .textContent.replace(/&/g, "")
   .replace(/’/g, "")
   .replace(/'/g, "")
   .replace(/\s+/g, " ")
   .trim();
-let year = document.querySelector(".number").textContent;
+let year = document.querySelector(".releaseyear").textContent;
 
 // Create search buttons
 function append_trackers(trackers) {
