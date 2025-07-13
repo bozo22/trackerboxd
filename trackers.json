@@ -1,13 +1,4 @@
 {
-  "extto": {
-    "name": "extto",
-    "link": [
-      "https://site.extto.com/search/?q=",
-      " ",
-      ""
-    ],
-    "type": "public"
-  },
   "nyaa": {
     "name": "Nyaa",
     "link": [
@@ -20,7 +11,7 @@
   "piratebay": {
     "name": "The Pirate Bay",
     "link": [
-      "https://knaben.ru/thepiratebay/s/?q=",
+      "https://knaben.xyz/thepiratebay/s/?q=",
       " ",
       "&page=0&orderby=99"
     ],
@@ -32,15 +23,6 @@
       "https://rutracker.org/forum/tracker.php?nm=",
       " ",
       ""
-    ],
-    "type": "public"
-  },
-  "torrentgalaxy": {
-    "name": "TorrentGalaxy",
-    "link": [
-      "https://torrentgalaxy.to/torrents.php?search=",
-      " ",
-      "&sort=seeders&order=desc"
     ],
     "type": "public"
   },
@@ -60,12 +42,16 @@
       " ",
       ""
     ],
+    "linkIMDb": [
+      "https://ncore.pro/torrents.php?mire=",
+      "&miben=imdb"
+    ],
     "type": "private"
   },
   "knaben": {
     "name": "Knaben",
     "link": [
-      "https://knaben.net/search/?q=",
+      "https://knaben.org/search/?q=",
       " ",
       "#Seeders"
     ],
@@ -80,22 +66,31 @@
     ],
     "type": "other"
   },
-  "torrentztwo": {
-    "name": "Torrentz2",
+  "torrentleech": {
+    "name": "TorrentLeech",
     "link": [
-      "https://torrentz2.nz/search?q=",
+      "https://www.torrentleech.org/torrents/browse/index/query/",
+      " ",
+      "/orderby/seeders/order/desc"
+    ],
+    "linkIMDb": [
+      "https://www.torrentleech.org/torrents/browse/index/imdbID/",
+      "/orderby/seeders/order/desc"
+    ],
+    "type": "private"
+  },
+  "digitalcore": {
+    "name": "DigitalCore",
+    "link": [
+      "https://digitalcore.club/search?sort=up&order=desc&search=",
       " ",
       ""
     ],
-    "type": "aggregator"
-  },
-  "bitsearch": {
-    "name": "BitSearch",
-    "link": [
-      "https://bitsearch.to/search?q=",
+    "linkIMDb": [
+      "https://digitalcore.club/search?sort=up&order=desc&search=",
       " ",
-      "&sort=seeders"
+      ""
     ],
-    "type": "aggregator"
+    "type": "private"
   }
 }

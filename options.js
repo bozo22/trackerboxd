@@ -46,7 +46,9 @@ async function createOptions() {
   chrome.storage.sync.get(null, function (result) {
     for (const [tracker, value] of Object.entries(result)) {
       let id = "#" + tracker;
-      document.querySelector(id).checked = value;
+      if (document.querySelector(id)) {
+        document.querySelector(id).checked = value;
+      }
     }
   });
 }

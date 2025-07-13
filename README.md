@@ -14,14 +14,12 @@ A browser extension that adds torrent search shortcuts to Letterboxd.
 - Knaben
 - The Pirate Bay
 - Nyaa
-- ncore
+- nCore
 - RuTracker 
-- Extto
 - NZBFinder
-- TorrentGalaxy
-- Torrentz2
-- BitSearch
 - 1337x
+- TorrentLeech
+- DigitalCore
 
 If you want a tracker added, feel free to open an issue/PR!
 

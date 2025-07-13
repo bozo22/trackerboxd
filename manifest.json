@@ -1,7 +1,7 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "trackerboxd",
-  "version": "1.5.6",
+  "version": "1.6",
   "description": "Adds torrent search shortcuts to Letterboxd",
   "icons": {
     "128": "icon.png",
@@ -14,10 +14,12 @@
     }
   ],
   "options_ui": {
-    "page": "options.html"
+    "page": "options.html",
+    "open_in_tab": false
   },
-  "permissions": ["storage", "*://*.letterboxd.com/*"],
-  "browser_action": {
+  "permissions": ["storage"], 
+  "host_permissions": ["*://*.letterboxd.com/*"],
+  "action": {
     "default_icon": "icon.png",
     "default_title": "trackerboxd",
     "default_popup": "options.html"
@@ -27,5 +29,10 @@
       "id": "{df85b502-bef7-45a0-a9b3-dbcc57927a3d}"
     }
   },
-  "web_accessible_resources": ["trackers.json"]
+  "web_accessible_resources": [
+    {
+      "resources": ["trackers.json"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
